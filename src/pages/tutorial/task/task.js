@@ -311,17 +311,17 @@ class TaskPage extends React.Component {
                                 <div dangerouslySetInnerHTML={{ __html: block.bodyHTML }}/>
                                 <ButtonGroup>
                                   <Radio
-                                    name={step.stepDoc}
+                                    name={"verification" + i}
                                     onChange={e => {
-                                      //this.handleYesVerification(e, verification);
+                                      this.handleYesVerification(e, block);
                                     }}
                                   >
                                     Yes
                                   </Radio>
                                   <Radio
-                                    name={step.stepDoc}
+                                    name={"verification" + i}
                                     onChange={e => {
-                                      //this.handleNoVerification(e, verification);
+                                      this.handleNoVerification(e, block);
                                     }}
                                   >
                                     No
